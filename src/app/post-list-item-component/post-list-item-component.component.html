@@ -1,0 +1,25 @@
+<li class="list-group-item">
+  <div class="border-content" [ngClass]="{'list-group-item': true,
+  'list-group-item-success': loveit > 0,
+  'list-group-item-danger': loveit < 0}">
+      <div class="heading-div">
+          <h2>{{ title}}</h2>
+          <h5>{{ createat | date:'MM/dd/yyyy, h:mm a' }}</h5>
+      </div>
+      <div class="clear"></div>
+      <div>
+          <p>
+              {{ content }}
+          </p>
+      </div>
+      <div class="clear"></div>
+      <div class="right">
+          <span class="glyphicon" [ngClass]="{'glyphicon-heart' : loveit > 0,  'glyphicon-heart-empty' : loveit < 0}"></span><br>
+      </div>
+  </div>
+  <div class="div-action">
+    <button class="btn btn-success" (click)='setLoveIt()'>Love it !</button>
+    <div class="divider"> </div>
+    <button class="btn btn-danger" (click)='setNoLoveIt()'>Don't love it !</button>
+  </div>
+</li>

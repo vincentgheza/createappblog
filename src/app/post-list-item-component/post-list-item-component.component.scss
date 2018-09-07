@@ -1,0 +1,47 @@
+ul.list-group:after {
+    clear: both;
+    display: inline-flex;
+    content: "";
+  }
+  
+  .list-group-item {
+      border: 0 !important;
+      margin: 0px;
+      padding: 10px 0px;
+  }
+  
+
+  .divider{
+    width:5px;
+    height:auto;
+    display:inline-flex;
+}
+
+.border-content{
+  border: 2px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.div-action{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h2{
+  float: left;
+  vertical-align:bottom;
+}
+
+h5{
+  float: right;
+  vertical-align:top;
+}
+
+.clear{
+  clear: both;
+}
+
+.right{
+  text-align: right;
+}
